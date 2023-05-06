@@ -18,4 +18,8 @@ describe("fizzbuzz", () => {
         expect(fizzBuzz(15)).toEqual('FizzBuzz')
     })
 
+    it('takes numbers from 1 to 100', () => {
+        expect(fizzBuzz(-1)).toBeFalsy()
+    })
+
 });
