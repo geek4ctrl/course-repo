@@ -6,4 +6,7 @@ describe('palindrome checker', () => {
         expect(palindromeChecker("mom")).toBe(true);
     })
 
+    it('should return true for mom', () => {
+        expect(palindromeChecker("mom")).toBeTruthy();
+    })
 })
