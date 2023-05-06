@@ -14,4 +14,8 @@ describe('palindrome checker', () => {
         expect(palindromeChecker("bill")).toBeFalsy();
     })
 
+    it('should return true for Mom', () => {
+        expect(palindromeChecker("Mom")).toBeTruthy();
+    })
+
 })
