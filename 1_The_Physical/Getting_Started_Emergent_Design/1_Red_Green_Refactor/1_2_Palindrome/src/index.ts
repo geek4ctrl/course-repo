@@ -1,4 +1,5 @@
 
-export function palindromeChecker(str: string) {
-    return true;
+export function palindromeChecker(str: string): boolean {
+    const reversed = str.split("").reverse().join("");
+    return str === reversed;
 }
