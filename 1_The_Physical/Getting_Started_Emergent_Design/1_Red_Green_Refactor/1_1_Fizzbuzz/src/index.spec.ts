@@ -19,11 +19,15 @@ describe("fizzbuzz", () => {
     })
 
     it('takes numbers from 1 to 100', () => {
-        expect(fizzBuzz(101)).toBeFalsy()
+
     })
 
     it('does not accept numbers less than 1', () => {
         expect(fizzBuzz(-1)).toBeFalsy()
+    })
+
+    it('does not accept numbers greater than 101', () => {
+        expect(fizzBuzz(101)).toBeFalsy()
     })
 
 });
