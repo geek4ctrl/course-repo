@@ -9,4 +9,9 @@ describe('palindrome checker', () => {
     it('should return true for mom', () => {
         expect(palindromeChecker("mom")).toBeTruthy();
     })
+
+    it('should return false for bill', () => {
+        expect(palindromeChecker("bill")).toBeFalsy();
+    })
+
 })
