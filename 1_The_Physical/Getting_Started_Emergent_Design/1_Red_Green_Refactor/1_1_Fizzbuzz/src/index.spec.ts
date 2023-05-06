@@ -20,6 +20,7 @@ describe("fizzbuzz", () => {
 
     it('takes numbers from 1 to 100', () => {
         expect(fizzBuzz(-1)).toBeFalsy()
+        expect(fizzBuzz(101)).toBeFalsy()
     })
 
 });
