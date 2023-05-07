@@ -7,7 +7,7 @@ export interface IResult {
 export function statsCalculator(values: any): IResult {
 
     let result = {} as IResult;
-    let minimumValue = 0;
+    let minimumValue = Number.MAX_VALUE;
 
     for (let i = 0; i < values.length; i++) {
         if (minimumValue > values[i]) {
