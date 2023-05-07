@@ -38,6 +38,19 @@ describe('password validator', () => {
 
   })
 
+  it('should return an invalid password for strings that do contain at least one upper case letter', () => {
+    // arrange
+    let response: IResult;
+
+    // act
+    response = passwordValidator("por1tugal");
+
+    // assert
+    expect(response.result).toBeFalsy();
+    expect(response.errors.length).toEqual(1);
+    expect(response.errors[0].error).toContain('String should contain at least one upper case letter.');
+  })
+
 })
 
 
