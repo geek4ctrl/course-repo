@@ -29,7 +29,7 @@ describe('password validator', () => {
     let response: IResult;
 
     // act
-    response = passwordValidator("netherlands");
+    response = passwordValidator("maxwellTheBe");
 
     // assert
     expect(response.result).toBeFalsy();
@@ -43,7 +43,7 @@ describe('password validator', () => {
     let response: IResult;
 
     // act
-    response = passwordValidator("por1tugal");
+    response = passwordValidator("maxwell1_c");
 
     // assert
     expect(response.result).toBeFalsy();
