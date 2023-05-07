@@ -27,6 +27,7 @@ export function statsCalculator(values: any): IResult {
     result.minimumValue = minimumValue;
     result.maximumValue = maximumValue;
     result.averageValue = averageValue / values.length;
+    result.numberOfElements = values.length;
 
     return result;
 }

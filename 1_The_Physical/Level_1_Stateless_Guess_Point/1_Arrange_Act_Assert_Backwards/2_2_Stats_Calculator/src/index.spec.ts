@@ -49,4 +49,15 @@ describe('stats calculator', () => {
         // Assert
         expect(response.averageValue).toEqual(18.666666666666668);
     })
+
+    it('should have 6 number of elements in the sequence', () => {
+        // Arrange
+        let response: IResult;
+
+        // Act
+        response = statsCalculator([2, 4, 21, -8, 53, 40])
+
+        // Assert
+        expect(response.numberOfElements).toEqual(6)
+    })
 });
