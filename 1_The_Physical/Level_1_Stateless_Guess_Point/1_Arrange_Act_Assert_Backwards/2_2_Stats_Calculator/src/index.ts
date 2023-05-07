@@ -1,7 +1,8 @@
 export interface IResult {
     minimumValue: number,
     maximumValue: number,
-    averageValue: number
+    averageValue: number,
+    numberOfElements: number
 }
 
 export function statsCalculator(values: any): IResult {
@@ -28,5 +29,4 @@ export function statsCalculator(values: any): IResult {
     result.averageValue = averageValue / values.length;
 
     return result;
-
 }
