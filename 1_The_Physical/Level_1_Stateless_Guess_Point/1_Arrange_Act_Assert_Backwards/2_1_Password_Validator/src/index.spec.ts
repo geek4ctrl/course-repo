@@ -24,6 +24,19 @@ describe('password validator', () => {
     expect(response.errors[0].error).toContain('String length should be between 5 and 15 characters long.')
   })
 
+  it('should return an invalid length error for strings more than 15 characters.', () => {
+    // arrange
+    let response: IResult;
+
+    // act
+    response = passwordValidator('thePhysical1234567')
+
+    // assert
+    expect(response.result).toBeFalsy();
+    expect(response.errors.length).toEqual(1);
+    expect(response.errors[0].error).toContain('String length should be between 5 and 15 characters long.')
+  })
+
   it('should return an invalid password for strings that do not contain at least one digit.', () => {
     // arrange
     let response: IResult;
