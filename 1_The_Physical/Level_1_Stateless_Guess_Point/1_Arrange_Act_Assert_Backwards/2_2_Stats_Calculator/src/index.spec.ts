@@ -12,7 +12,7 @@ describe('stats calculator', () => {
 
         // Assert
         expect(response.minimumValue).toBeTruthy();
-        expect(response.maximumValue).toBeFalsy();
+        expect(response.maximumValue).toBeTruthy();
         expect(response.averageValue).toBeFalsy();
 
     });
@@ -26,5 +26,16 @@ describe('stats calculator', () => {
 
         // Assert
         expect(response.minimumValue).toEqual(-8);
+    })
+
+    it('should return a maximum value of 53', () => {
+        // Arrange
+        let response: IResult;
+
+        // Act
+        response = statsCalculator([2, 4, 21, -8, 53, 40])
+
+        // Assert
+        expect(response.maximumValue).toEqual(53);
     })
 });
