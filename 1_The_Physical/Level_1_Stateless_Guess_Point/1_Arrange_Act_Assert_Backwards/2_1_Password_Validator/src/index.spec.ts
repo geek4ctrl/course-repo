@@ -24,6 +24,20 @@ describe('password validator', () => {
     expect(response.errors[0].error).toContain('String length should be between 5 and 15 characters long.')
   })
 
+  it('should return an invalid password for strings that do not contain at least one digit.', () => {
+    // arrange
+    let response: IResult;
+
+    // act
+    response = passwordValidator("netherlands");
+
+    // assert
+    expect(response.result).toBeFalsy();
+    expect(response.errors.length).toEqual(1);
+    expect(response.errors[0].error).toContain('String should contain at least one digit.');
+
+  })
+
 })
 
 
