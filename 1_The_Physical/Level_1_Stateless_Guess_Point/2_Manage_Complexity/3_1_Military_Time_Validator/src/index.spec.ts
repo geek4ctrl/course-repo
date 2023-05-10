@@ -29,4 +29,13 @@ describe('military time validator', () => {
         expect(militaryTimeValidator("01:12 - 14:32")).toEqual(true)
     })
 
+    it('should have a semicolon delimiter in the starting military time array', () => {
+        // Arrange
+
+        // Act
+
+        // Assert
+        expect(militaryTimeValidator("01:12 - 14:32")).toEqual(true);
+    })
+
 })
