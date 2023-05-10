@@ -8,5 +8,9 @@ export function militaryTimeValidator(militaryTime: string): boolean {
         return false;
     }
 
+    if (militaryTimeArray.length !== 2) {
+        return false;
+    }
+
     return true;
 }
