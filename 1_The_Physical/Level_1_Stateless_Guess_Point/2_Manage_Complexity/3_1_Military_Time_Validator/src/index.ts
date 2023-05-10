@@ -27,5 +27,13 @@ export function militaryTimeValidator(militaryTime: string): boolean {
         return false;
     }
 
+    if (endingMilitaryTimeArray.length == 0) {
+        return false;
+    }
+
+    if (endingMilitaryTimeArray.length !== 2) {
+        return false;
+    }
+
     return true;
 }
