@@ -61,5 +61,9 @@ export function militaryTimeValidator(militaryTime: string): boolean {
         return false;
     }
 
+    if (endingMilitaryTimeHours < 0 || endingMilitaryTimeHours > 23) {
+        return false;
+    }
+
     return true;
 }
