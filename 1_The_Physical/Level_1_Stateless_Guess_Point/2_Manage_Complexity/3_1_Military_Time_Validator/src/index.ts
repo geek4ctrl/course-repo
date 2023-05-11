@@ -73,5 +73,9 @@ export function militaryTimeValidator(militaryTime: string): boolean {
         return false;
     }
 
+    if (startingMilitaryTimeHours > endingMilitaryTimeHours) {
+        return false;
+    }
+
     return true;
 }
