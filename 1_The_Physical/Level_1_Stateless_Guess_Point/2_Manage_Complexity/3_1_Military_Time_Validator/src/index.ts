@@ -15,6 +15,7 @@ export function militaryTimeValidator(militaryTime: string): boolean {
     const startingMilitaryTimeMinutes = +startingMilitaryTimeArray[1].trim();
 
     const endingMilitaryTimeHours = +endingMilitaryTimeArray[0].trim();
+    const endingMilitaryTimeMinutes = +endingMilitaryTimeArray[0].trim();
 
     if (militaryTimeArray.length == 0) {
         return false;
@@ -49,6 +50,10 @@ export function militaryTimeValidator(militaryTime: string): boolean {
     }
 
     if (typeof endingMilitaryTimeHours !== 'number') {
+        return false;
+    }
+
+    if (typeof endingMilitaryTimeMinutes !== 'number') {
         return false;
     }
 
