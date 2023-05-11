@@ -110,4 +110,13 @@ describe('military time validator', () => {
         expect(militaryTimeValidator("01:12 - 14:32")).toEqual(true);
     })
 
+    it('should have numbers between 0 and 59 for ending minutes', () => {
+        // Arrange
+
+        // Act
+
+        // Assert
+        expect(militaryTimeValidator("01:12 - 14:32")).toEqual(true);
+    })
+
 })
