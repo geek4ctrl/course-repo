@@ -74,4 +74,13 @@ describe('boolean calculator', () => {
         expect(booleanCalculator("FALSE AND FALSE")).toEqual(false);
     })
 
+    it('should return true for "TRUE OR TRUE"', () => {
+        // Arrange
+
+        // Act
+
+        // Arrange
+        expect(booleanCalculator("TRUE OR TRUE")).toEqual(true);
+    })
+
 })
