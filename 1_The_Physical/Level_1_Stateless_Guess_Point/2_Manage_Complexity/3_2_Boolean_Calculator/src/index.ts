@@ -14,6 +14,10 @@ export function booleanCalculator(expression: string): boolean {
         return false;
     }
 
+    if (expression == "NOT FALSE") {
+        return true;
+    }
+
     return false;
 
 }
