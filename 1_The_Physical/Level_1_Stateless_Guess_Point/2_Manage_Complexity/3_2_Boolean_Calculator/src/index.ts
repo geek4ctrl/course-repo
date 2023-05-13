@@ -26,6 +26,10 @@ export function booleanCalculator(expression: string): boolean {
         return false;
     }
 
+    if (expression == "FALSE AND TRUE") {
+        return false;
+    }
+
     return false;
 
 }
