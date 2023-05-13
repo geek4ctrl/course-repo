@@ -65,4 +65,13 @@ describe('boolean calculator', () => {
         expect(booleanCalculator("FALSE AND TRUE")).toEqual(false);
     })
 
+    it('should return false for "FALSE AND FALSE"', () => {
+        // Arrange
+
+        // Act
+
+        // Assert
+        expect(booleanCalculator("FALSE AND FALSE")).toEqual(false);
+    })
+
 })

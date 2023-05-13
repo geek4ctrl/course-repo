@@ -30,6 +30,10 @@ export function booleanCalculator(expression: string): boolean {
         return false;
     }
 
+    if (expression == "FALSE AND FALSE") {
+        return false;
+    }
+
     return false;
 
 }
