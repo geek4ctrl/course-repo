@@ -38,4 +38,13 @@ describe('boolean calculator', () => {
         expect(booleanCalculator("NOT FALSE")).toEqual(true);
     })
 
+    it('shoud return true for "TRUE AND TRUE"', () => {
+        // Arrange
+
+        // Act
+
+        // Assert
+        expect(booleanCalculator("TRUE AND TRUE")).toEqual(true);
+    })
+
 })
